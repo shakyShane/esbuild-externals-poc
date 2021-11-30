@@ -1,0 +1,60 @@
+{
+  "errors": [],
+  "warnings": [],
+  "metafile": {
+    "inputs": {
+      "node_modules/lit/index.js": {
+        "bytes": 122,
+        "imports": []
+      },
+      "src/page1.js": {
+        "bytes": 174,
+        "imports": [
+          {
+            "path": "node_modules/lit/index.js",
+            "kind": "import-statement"
+          }
+        ]
+      },
+      "src/page2.js": {
+        "bytes": 174,
+        "imports": [
+          {
+            "path": "node_modules/lit/index.js",
+            "kind": "import-statement"
+          }
+        ]
+      }
+    },
+    "outputs": {
+      "dist/page1.js": {
+        "imports": [],
+        "exports": [],
+        "entryPoint": "src/page1.js",
+        "inputs": {
+          "node_modules/lit/index.js": {
+            "bytesInOutput": 216
+          },
+          "src/page1.js": {
+            "bytesInOutput": 182
+          }
+        },
+        "bytes": 1207
+      },
+      "dist/page2.js": {
+        "imports": [],
+        "exports": [],
+        "entryPoint": "src/page2.js",
+        "inputs": {
+          "node_modules/lit/index.js": {
+            "bytesInOutput": 216
+          },
+          "src/page2.js": {
+            "bytesInOutput": 182
+          }
+        },
+        "bytes": 1207
+      }
+    }
+  }
+}
