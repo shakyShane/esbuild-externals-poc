@@ -1,7 +1,7 @@
 import {html, LitElement} from "lit";
 import {unsafeHTML} from "lit/directives/unsafe-html.js"
 
-class Page1 extends LitElement {
+class Page3 extends LitElement {
     static properties = {
         count: { state: true, type: Number }
     }
@@ -14,11 +14,11 @@ class Page1 extends LitElement {
     }
     render() {
         return html`
-            <p>Page 1 :) ${unsafeHTML("<span>oh no</span>")} 
+            <p>Page 3 :) ${unsafeHTML("<span>oh no</span>")} 
             </p>
         <button @click=${this.click}>Count ${this.count}</button>
         `
     }
 }
 
-customElements.define("page-1", Page1);
+customElements.define("page-3", Page3);

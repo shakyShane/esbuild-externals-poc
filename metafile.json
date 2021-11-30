@@ -3,15 +3,50 @@
   "warnings": [],
   "metafile": {
     "inputs": {
-      "node_modules/lit/index.js": {
-        "bytes": 122,
+      "node_modules/lit-element/lit-element.js": {
+        "bytes": 1717,
         "imports": []
       },
+      "node_modules/lit/index.js": {
+        "bytes": 122,
+        "imports": [
+          {
+            "path": "node_modules/lit-element/lit-element.js",
+            "kind": "import-statement"
+          }
+        ]
+      },
+      "node_modules/lit-html/directive.js": {
+        "bytes": 481,
+        "imports": []
+      },
+      "node_modules/lit-html/directives/unsafe-html.js": {
+        "bytes": 1011,
+        "imports": [
+          {
+            "path": "node_modules/lit-html/directive.js",
+            "kind": "import-statement"
+          }
+        ]
+      },
+      "node_modules/lit/directives/unsafe-html.js": {
+        "bytes": 89,
+        "imports": [
+          {
+            "path": "node_modules/lit-html/directives/unsafe-html.js",
+            "kind": "import-statement"
+          }
+        ]
+      },
       "src/page1.js": {
-        "bytes": 174,
+        "bytes": 555,
         "imports": [
           {
             "path": "node_modules/lit/index.js",
+            "kind": "import-statement"
+          },
+          {
+            "path": "node_modules/lit/directives/unsafe-html.js",
             "kind": "import-statement"
           }
         ]
@@ -24,36 +59,90 @@
             "kind": "import-statement"
           }
         ]
+      },
+      "src/page3.js": {
+        "bytes": 555,
+        "imports": [
+          {
+            "path": "node_modules/lit/index.js",
+            "kind": "import-statement"
+          },
+          {
+            "path": "node_modules/lit/directives/unsafe-html.js",
+            "kind": "import-statement"
+          }
+        ]
       }
     },
     "outputs": {
-      "dist/page1.js": {
+      "dist/page1-UCBF3KPO.js": {
         "imports": [],
         "exports": [],
         "entryPoint": "src/page1.js",
         "inputs": {
           "node_modules/lit/index.js": {
-            "bytesInOutput": 216
+            "bytesInOutput": 215
+          },
+          "node_modules/lit-element/lit-element.js": {
+            "bytesInOutput": 1461
+          },
+          "node_modules/lit-html/directives/unsafe-html.js": {
+            "bytesInOutput": 632
+          },
+          "node_modules/lit-html/directive.js": {
+            "bytesInOutput": 299
+          },
+          "node_modules/lit/directives/unsafe-html.js": {
+            "bytesInOutput": 0
           },
           "src/page1.js": {
-            "bytesInOutput": 182
+            "bytesInOutput": 333
           }
         },
-        "bytes": 1207
+        "bytes": 3588
       },
-      "dist/page2.js": {
+      "dist/page2-H72LMRC7.js": {
         "imports": [],
         "exports": [],
         "entryPoint": "src/page2.js",
         "inputs": {
           "node_modules/lit/index.js": {
-            "bytesInOutput": 216
+            "bytesInOutput": 215
+          },
+          "node_modules/lit-element/lit-element.js": {
+            "bytesInOutput": 1461
           },
           "src/page2.js": {
-            "bytesInOutput": 182
+            "bytesInOutput": 99
           }
         },
-        "bytes": 1207
+        "bytes": 2283
+      },
+      "dist/page3-QQZUGMHS.js": {
+        "imports": [],
+        "exports": [],
+        "entryPoint": "src/page3.js",
+        "inputs": {
+          "node_modules/lit/index.js": {
+            "bytesInOutput": 215
+          },
+          "node_modules/lit-element/lit-element.js": {
+            "bytesInOutput": 1461
+          },
+          "node_modules/lit-html/directives/unsafe-html.js": {
+            "bytesInOutput": 632
+          },
+          "node_modules/lit-html/directive.js": {
+            "bytesInOutput": 299
+          },
+          "node_modules/lit/directives/unsafe-html.js": {
+            "bytesInOutput": 0
+          },
+          "src/page3.js": {
+            "bytesInOutput": 333
+          }
+        },
+        "bytes": 3588
       }
     }
   }
